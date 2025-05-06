@@ -13,11 +13,3 @@ indicatif = "0.17.0"
 rayon = "1.7.0"
 chrono = "0.4.26"
 clap = { version = "4.3.0", features = ["derive"] }
-
-# GUI相关依赖
-eframe = { version = "0.24.0", optional = true }
-egui = { version = "0.24.0", optional = true }
-
-[features]
-# 添加GUI特性，可选编译
-gui = ["eframe", "egui"]
