@@ -12,22 +12,22 @@
 
 ### MacOS 用户：
 
-1. 打开终端
-2. 切换到程序所在目录
-3. 运行命令（二选一即可）：
+1. 打开程序所在文件夹
+2. 在当前目录打开终端
+3. 运行命令：
 
 ```
-./solana-vanity-address -p 88888,6666 -n 10
+./solana_vanity_address -p 88888,6666 -n 10
 ```
 
 ### Windows 用户：
 
-1. 打开命令提示符或 PowerShell
-2. 切换到程序所在目录
+1. 打开程序所在文件夹
+2. 在当前目录打开 cmd
 3. 运行命令：
 
 ```
-solana-vanity-address.exe -p 88888,6666 -n 10
+solana_vanity_address.exe -p 88888,6666 -n 10
 ```
 
 当想退出的时候按 Ctrl+C 即可。

@@ -148,7 +148,11 @@ fn main() -> io::Result<()> {
                 // 生成新的密钥对
                 let keypair = Keypair::new();
                 let address = keypair.pubkey().to_string();
-                let secret_key = bs58::encode(keypair.secret().as_ref()).into_string();
+                // let secret_key = bs58::encode(keypair.secret().as_ref()).into_string();
+                let mut keypair_bytes = [0u8; 64];
+                keypair_bytes[..32].copy_from_slice(keypair.secret().as_ref());
+                keypair_bytes[32..].copy_from_slice(keypair.pubkey().as_ref());
+                let secret_key = bs58::encode(&keypair_bytes).into_string();
                 
                 // 更新计数器
                 let mut gen_lock = generated.lock().unwrap();
