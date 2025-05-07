@@ -3,7 +3,7 @@ crunchy = { path = "vendor/crunchy" }
 
 [package]
 name = "solana_vanity_address"
-version = "0.1.0"
+version = "0.1.2"
 edition = "2024"
 
 [dependencies]
